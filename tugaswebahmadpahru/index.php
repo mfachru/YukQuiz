@@ -22,8 +22,6 @@
 <?php
 session_start();
 if(isset($_POST['login'])){
-    header("Location: beranda.php");
-} else {
-    echo "<script>alert('Username atau password Anda salah. Silahkan coba lagi!')</script>";
+    header("Location: home.html");
 }
 ?>
