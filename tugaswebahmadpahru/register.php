@@ -31,7 +31,8 @@ if(isset($_POST['login'])){
     if(mysqli_num_rows($cek)>0){
         echo "<script>alert('Email sudah terdaftar\')</script>";
     } else {
-        $ins = mysqli_query($host, "");
+        $ins = mysqli_query($host, "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) 
+                VALUES ($email, $passwords, NULL, NULL)");
         header("location: index.php");
     }
 }
