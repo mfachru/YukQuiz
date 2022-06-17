@@ -8,8 +8,8 @@ $success = [];
 $sql1 = "CREATE TABLE IF NOT EXISTS user (
             email varchar(255) NOT NULL PRIMARY KEY,
             passwords varchar(255) NOT NULL,
-            username varchar(255) NOT NULL,
-            about_me varchar(255) NOT NULL
+            username varchar(255) DEFAULT NULL,
+            about_me varchar(255) DEFAULT NULL
         )";
 
 $sqls = [$sql1];
