@@ -12,7 +12,10 @@ $sql1 = "CREATE TABLE IF NOT EXISTS user (
             about_me varchar(255) DEFAULT NULL
         )";
 
-$sqls = [$sql1];
+$sql2 = "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) VALUES
+        ('admin@root', 'admin', NULL, NULL)";
+
+$sqls = [$sql1, $sql2];
 
 foreach($sqls as $k => $sql){
     $query = @$host->query($sql);
