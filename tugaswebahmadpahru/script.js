@@ -90,13 +90,7 @@ submitBtn.addEventListener('click', () => {
         } else {
             quiz.innerHTML = `
                 <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                <button id="myButton">Home</button>
-
-                <script type="text/javascript">
-                    document.getElementById("myButton").onclick = function () {
-                        location.href = "www.yoursite.com";
-                    };
-                </script>
+                <button onclick="location.reload()">Reload</button>
             `
         }
     }
