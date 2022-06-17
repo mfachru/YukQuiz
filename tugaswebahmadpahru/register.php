@@ -22,18 +22,18 @@
 </html>
 
 <?php
-session_start();
-require 'config.php';
-if(isset($_POST['login'])){
+require_once 'config.php';
+if(isset($_POST['register'])){
     $email = $_POST['email'];
     $passwords = $_POST['passwords'];
-    $cek = mysqli_query($host, "SELECT * FROM user WHERE email='$email' AND passwords='$passwords'");
+    $cek = mysqli_query($host, "SELECT * FROM user WHERE email='$email'");
     if(mysqli_num_rows($cek)>0){
-        echo "<script>alert('Email sudah terdaftar\')</script>";
+        echo "<script>alert('Email sudah terdaftar')</script>";
     } else {
-        $ins = mysqli_query($host, "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) 
-                VALUES ($email, $passwords, NULL, NULL)");
-        header("location: index.php");
+        mysqli_query($host, "INSERT INTO user (email, passwords, username, about_me) 
+        VALUES ('$email', '$passwords', NULL, NULL)");
+        echo "<script>alert('Berhasil mendaftar')</script>";
+        header("Location: index.php");
     }
 }
 ?>
