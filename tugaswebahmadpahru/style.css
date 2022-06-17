@@ -142,6 +142,11 @@ img {
   text-transform: uppercase;
   border-bottom: 4px solid #2979ff;
 }
+.container p, a{
+  text-align: left;
+  color: #fafafa;
+  margin-top: 5px;
+}
 .container label{
   text-align: left;
   color: #90caf9;
