@@ -12,8 +12,10 @@ $sql1 = "CREATE TABLE IF NOT EXISTS user (
             about_me varchar(255) DEFAULT NULL
         )";
 
-$sql2 = "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) VALUES
-        ('admin@root', 'admin', NULL, NULL)";
+$sql2 = "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) 
+        VALUES ('admin@root', 'admin', NULL, NULL) 
+        ON DUPLICATE KEY UPDATE
+        passwords = 'admin'";
 
 $sqls = [$sql1, $sql2];
 
