@@ -106,7 +106,7 @@ button:focus {
   color: white;
 }
 
-img {
+.homeimg {
   border-radius: 50%;
 }
 
@@ -169,3 +169,38 @@ img {
   font-size: 18px;
   color: #fafafa;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.467);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding:10px;
+  border-radius: 2%;
+}
+
+.profilename {
+  padding-top: 5px;
+}
+
+.title {
+  color: rgb(67, 67, 67);
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.profileimg {
+  border-radius: 2%;
+}
+
+.buttonprofile:hover, a:hover {
+  opacity: 0.7;
+}
+
+.pr1 {
+  padding-bottom: 5px;
+}
+
+
