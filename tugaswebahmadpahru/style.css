@@ -195,4 +195,15 @@ button:focus {
 }
 .pr1 {
   padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.updatetext {
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.updateinfo {
+  font-size: 15px;
+  padding-top: 15px;
 }

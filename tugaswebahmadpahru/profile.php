@@ -21,9 +21,7 @@ require 'updateSession.php';
     <h2 style="text-align:center">Your Profile</h2>
     <div class="card">
         <img class="profileimg" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/05/gaten-matarazzo-stranger-things.jpg" alt="John" style="width:100%">
-        <h1 class="profilename" >Username</h1>
         <h1 class="profilename" ><?php echo $_SESSION['username']?></h1>
-        <h1 class="profilename" >About Me</h1>
         <p class="title"><i><?php echo $_SESSION['about_me']?></i></p>
         <p class="pr1" ><button name="delete" onclick="location.href = 'update.php';" class="buttonprofile" >Update Account</button></p>
         <p><button onclick="location.href = 'delete.php';" class="buttonprofile" >Delete Account</button></p>
