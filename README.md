@@ -4,7 +4,7 @@ Nama Anggota Kelompok :
 - Ahmad Al-Farizi             2017051060
 - Muhammad Fachru Syahputra   2017051087
 
-Studi Kasus           :
+Studi Kasus           : 
 Aplikasi quiz berbasis web
 
 Pembagian tugas
