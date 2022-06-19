@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<?php 
-session_start(); 
+<?php
+require 'config.php';
+session_start();
+if(isset($_POST['updates'])){
+    $email = $_SESSION['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $about_me = $_POST['about_me'];
+    $sql = "UPDATE user SET username='$username', passwords='$password', about_me='$about_me' WHERE email='$email'";
+    if(mysqli_query($host, $sql)){
+        echo "<script>alert('Update Successful')</script>";
+        header("Location: profile.php");
+    } 
+}
 ?>
 <html lang="en">
 <head>
@@ -33,18 +45,3 @@ session_start();
         </form>
     </div>
 </body>
-
-<?php
-require 'config.php';
-if(isset($_POST['updates'])){
-    $email = $_SESSION['email'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $about_me = $_POST['about_me'];
-    $sql = "UPDATE user SET username='$username', passwords='$password', about_me='$about_me' WHERE email='$email'";
-    if(mysqli_query($host, $sql)){
-        echo "<script>alert('Update Successful')</script>";
-        header("Location: profile.php");
-    } 
-}
-?>

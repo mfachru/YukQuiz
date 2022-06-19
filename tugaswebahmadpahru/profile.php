@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php 
-session_start(); 
+<?php
 require 'updateSession.php';
 ?>
 <html lang="en">
