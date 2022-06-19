@@ -1,4 +1,5 @@
 <?php
+session_destroy();
 require 'config.php';
 require 'preConfig.php';
 session_start();

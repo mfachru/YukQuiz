@@ -1,5 +1,6 @@
 <?php
 require 'config.php';
+session_start();
 $sid = session_id();
 $email = $_SESSION['email'];
 $sql = "SELECT * FROM user WHERE email='$email'";
