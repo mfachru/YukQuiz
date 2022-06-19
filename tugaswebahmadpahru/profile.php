@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
 session_start(); 
-// require 'updateSession.php';
+require 'updateSession.php';
 ?>
 <html lang="en">
 <head>

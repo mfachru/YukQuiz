@@ -20,15 +20,17 @@ session_start();
     </div>
     <h2 style="text-align:center">Your Profile</h2>
     <div class="card">
-        <p class="title">Email</p>
-        <p class="title"><i><?php echo $_SESSION['email']?></i></p>
-        <p class="title">Password</p>
-        <input type="password" name="password" class="inputprofile" value="<?php echo $_SESSION['passwords']?>">
-        <h1 class="profilename" >Username</h1>
-        <input type="text" name="username" class="inputprofile" value="<?php echo $_SESSION['username']?>">
-        <h1 class="profilename" >About Me</h1>
-        <input type="text" name="about_me" class="inputprofile" value="<?php echo $_SESSION['about_me']?>">
-        <p class="pr1" ><button name="updates" onclick="location.href = 'update.php';" class="buttonprofile" >Update Account</button></p>
+        <form action="update.php" method="post">
+            <p class="title">Email</p>
+            <p class="title"><i><?php echo $_SESSION['email']?></i></p>
+            <p class="title">Password</p>
+            <input type="password" name="password" class="inputprofile" value="<?php echo $_SESSION['passwords']?>">
+            <h1 class="profilename" >Username</h1>
+            <input type="text" name="username" class="inputprofile" value="<?php echo $_SESSION['username']?>">
+            <h1 class="profilename" >About Me</h1>
+            <input type="text" name="about_me" class="inputprofile" value="<?php echo $_SESSION['about_me']?>">
+            <p class="pr1" ><button name="updates" onclick="location.href = 'update.php';" class="buttonprofile" >Update Account</button></p>
+        </form>
     </div>
 </body>
 
