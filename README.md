@@ -7,7 +7,7 @@ Nama Anggota Kelompok :
 Studi Kasus           : 
 Aplikasi quiz berbasis web
 
-Pembagian tugas
+Pembagian tugas&
 Ahmad Al-Farizi           : Memasukan database ke dalam masing-masing UI yang bersangkutan
 Muhammad Fachru Syahputra : Membuat masing-masing tampilan UI
 
