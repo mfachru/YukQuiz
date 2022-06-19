@@ -9,5 +9,8 @@ Aplikasi quiz berbasis web
 
 Pembagian tugas
 Ahmad Al-Farizi           : Memasukan database ke dalam masing-masing UI yang bersangkutan
-Muhammad Fachru Syahputra : Membuat UI 
+Muhammad Fachru Syahputra : Membuat masing-masing tampilan UI
+
+Link Hosting :
+https://yukquiz.000webhostapp.com/
 
