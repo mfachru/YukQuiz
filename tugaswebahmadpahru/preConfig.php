@@ -13,7 +13,7 @@ $sql1 = "CREATE TABLE IF NOT EXISTS user (
         )";
 
 $sql2 = "INSERT INTO user (`email`, `passwords`, `username`, `about_me`) 
-        VALUES ('admin@root', 'admin', NULL, NULL) 
+        VALUES ('admin@root', 'admin', 'Username Not Set', 'Status Not Set') 
         ON DUPLICATE KEY UPDATE
         passwords = 'admin'";
 

@@ -31,7 +31,7 @@ if(isset($_POST['register'])){
         echo "<script>alert('Email sudah terdaftar')</script>";
     } else {
         mysqli_query($host, "INSERT INTO user (email, passwords, username, about_me) 
-        VALUES ('$email', '$passwords', NULL, NULL)");
+        VALUES ('$email', '$passwords', 'Username Not Set', 'Status Not Set')");
         echo "<script>alert('Berhasil mendaftar')</script>";
         header("Location: index.php");
     }
